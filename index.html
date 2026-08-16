@@ -11,30 +11,20 @@
     <meta http-equiv="Expires" content="0">
 
     <script>
-        // الرابط النهائي
-        const TARGET_URL = "https://sin3uy.online";
+        (function () {
+            var target = "https://sin3uy.online";
 
-        // التحويل بدون إضافة صفحة GitHub إلى سجل الرجوع
-        history.replaceState(null, "", TARGET_URL);
-
-        // منع الرجوع إلى صفحة التحويل
-        history.pushState(null, "", TARGET_URL);
-
-        window.addEventListener("popstate", function () {
-            history.pushState(null, "", TARGET_URL);
-            window.location.replace(TARGET_URL);
-        });
-
-        // التحويل الفوري
-        window.location.replace(TARGET_URL);
+            // استبدال صفحة GitHub بالرابط النهائي
+            window.location.replace(target);
+        })();
     </script>
 </head>
 
 <body>
 
-    <noscript>
-        <meta http-equiv="refresh" content="0;url=https://sin3uy.online">
-    </noscript>
+<noscript>
+    <meta http-equiv="refresh" content="0;url=https://sin3uy.online">
+</noscript>
 
 </body>
 </html>
